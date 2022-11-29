@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCV with Flask</title>
+</head>
+<body>
+    <h1>live processing video</h1>
+    <div>
+        <button type="button" class="button">Hide a camera</button>
+        <img class="camera" 
+             src="{{ url_for('video') }}" 
+             width="50%" 
+             style="display: block;"/>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
